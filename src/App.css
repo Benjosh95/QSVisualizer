@@ -1,5 +1,7 @@
 .App {
-  width: 100vw;
-  height: 100vh;
-  background-color: orange;
+margin: 8px 0px 0px 8px;
+padding: 8px;
+background-color: aqua;
+width: fit-content;
 }
+
