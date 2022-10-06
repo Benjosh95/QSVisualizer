@@ -6,9 +6,9 @@ import { Header } from './components/Header';
 
 function App() {
 
-  const [arr, setArr] = useState<number[]>([22,35,53,66,17,76,25,11,25,44,56,10]);
+  const [arr, setArr] = useState<number[]>([22,35,53,66,17,76,25,18,25,44,56,30]);
 
-  let arrToBeSorted = [22,35,53,66,17,76,25,11,25,44,56,10]
+  let arrToBeSorted = [22,35,53,66,17,76,25,18,25,44,56,30]
 
   function handleClick(){
     quickSort(arrToBeSorted, 0, arrToBeSorted.length - 1)
