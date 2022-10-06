@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
+import { Bar } from './components/Bar'
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
 
 function App() {
 
-  const [arr, setArr] = useState<number[]>([]);
+  const [arr, setArr] = useState<number[]>([22,35,53,66,17,76,25,11,25,44,56,10]);
 
-  let arrToBeSorted = [1,5,3,66,7,76,25,11,2,4,6,0]
+  let arrToBeSorted = [22,35,53,66,17,76,25,11,25,44,56,10]
 
   function handleClick(){
     quickSort(arrToBeSorted, 0, arrToBeSorted.length - 1)
@@ -14,9 +17,19 @@ function App() {
 
   return (
     <div className="App">
-      <p>{"array to be sorted = " + arrToBeSorted}</p>
-      <button onClick={() => handleClick()}>quicksort it bre!</button>
-      {arr && <p>{"sorted array = " + arr}</p>}
+      <Header/>
+      <main className='container'>
+        <div className='code-container'>
+          <p>{"array to be sorted = " + arrToBeSorted}</p>
+          <button onClick={() => handleClick()}>quicksort it bre! {'------>'}</button>
+        </div>
+        <div className='visualizer-container'>
+          <>
+            {arr.map((number) => <Bar color={"green"} allNumbers={arr} number={number}/>)}
+          </>
+        </div>
+      </main>
+      <Footer/>
     </div>
   );
 }

@@ -1,7 +1,26 @@
 .App {
-margin: 8px 0px 0px 8px;
-padding: 8px;
-background-color: aqua;
-width: fit-content;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.code-container {
+    background-color: rgb(173, 206, 81);
+    padding: 10px;
+} 
+
+.visualizer-container {
+    background-color: grey;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
 }
 
