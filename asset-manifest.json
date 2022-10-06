@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/QSVisualizer/static/css/main.ea11e95c.css",
+    "main.js": "/QSVisualizer/static/js/main.a8e15d87.js",
+    "index.html": "/QSVisualizer/index.html",
+    "main.ea11e95c.css.map": "/QSVisualizer/static/css/main.ea11e95c.css.map",
+    "main.a8e15d87.js.map": "/QSVisualizer/static/js/main.a8e15d87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea11e95c.css",
+    "static/js/main.a8e15d87.js"
+  ]
+}
